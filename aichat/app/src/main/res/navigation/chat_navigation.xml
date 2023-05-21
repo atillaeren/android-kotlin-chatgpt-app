@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_navigation"
+    app:startDestination="@id/onboardingFragment">
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.aesoftware.aichat.ui.OnboardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_onboarding2Fragment"
+            app:destination="@id/onboarding2Fragment" />
+        <action
+            android:id="@+id/action_onboardingFragment_to_inAppFragment"
+            app:destination="@id/inAppFragment" />
+        <action
+            android:id="@+id/action_onboardingFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding2Fragment"
+        android:name="com.aesoftware.aichat.ui.Onboarding2Fragment"
+        android:label="Onboarding2Fragment" >
+        <action
+            android:id="@+id/action_onboarding2Fragment_to_inAppFragment"
+            app:destination="@id/inAppFragment" />
+        <action
+            android:id="@+id/action_onboarding2Fragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inAppFragment"
+        android:name="com.aesoftware.aichat.ui.InAppFragment"
+        android:label="fragment_in_app"
+        tools:layout="@layout/fragment_in_app" >
+        <action
+            android:id="@+id/action_inAppFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_inAppFragment_to_onboarding2Fragment"
+            app:destination="@id/onboarding2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.aesoftware.aichat.ui.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_chatFragment_to_trialEndFragment"
+            app:destination="@id/trialEndFragment" />
+        <action
+            android:id="@+id/action_chatFragment_to_inAppFragment"
+            app:destination="@id/inAppFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.aesoftware.aichat.ui.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_inAppFragment"
+            app:destination="@id/inAppFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trialEndFragment"
+        android:name="com.aesoftware.aichat.ui.TrialEndFragment"
+        android:label="TrialEndFragment" >
+        <action
+            android:id="@+id/action_trialEndFragment_to_inAppFragment"
+            app:destination="@id/inAppFragment" />
+    </fragment>
+</navigation>

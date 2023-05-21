@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ui.InAppFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/outerGuideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/outerGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/outerGuideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/outerGuideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <ImageView
+        android:id="@+id/closeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_close"
+        app:layout_constraintBottom_toTopOf="@id/outerGuideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/firstConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/outerGuideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/outerGuideline1">
+
+        <TextView
+            android:id="@+id/mainConstraintTV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/inapp1"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/mainConstraintTV2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/firstConstraint" />
+
+        <TextView
+            android:id="@+id/mainConstraintTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="@string/inapp2"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/mainConstraintLinear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mainConstraintTV1" />
+
+        <LinearLayout
+            android:id="@+id/mainConstraintLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mainConstraintTV2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_lock" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/inapp3"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/outerGuideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/outerGuideline2">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/innerGuideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/innerGuideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/innerGuideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.32" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/innerGuideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.356" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/innerGuideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.636" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/innerGuideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.672" />
+
+        <ImageView
+            android:id="@+id/weeklyPlanView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/inapp_unclicked"
+            android:clickable="true"
+            android:contentDescription="Weekly Plan"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/innerGuideline1"
+            app:layout_constraintBottom_toBottomOf="@id/innerGuideline3"/>
+
+        <ImageView
+            android:id="@+id/iconWeekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_unselected"
+            android:elevation="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/weeklyPlanView"
+            app:layout_constraintStart_toStartOf="@id/weeklyPlanView"
+            app:layout_constraintTop_toTopOf="@id/weeklyPlanView" />
+
+        <TextView
+            android:id="@+id/weeklyTV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Weekly"
+            android:textColor="#F0F0F0"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/weeklyTV2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/weeklyPlanView" />
+
+        <TextView
+            android:id="@+id/weeklyTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="US$3.99/week"
+            android:textColor="#F0F0F0"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/weeklyPlanView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weeklyTV1" />
+
+        <ImageView
+            android:id="@+id/monthlyPlanView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/inapp_unclicked"
+            android:clickable="true"
+            android:contentDescription="Monthly Plan"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/innerGuideline4"
+            app:layout_constraintBottom_toBottomOf="@id/innerGuideline5"/>
+
+        <ImageView
+            android:id="@+id/iconMonthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_unselected"
+            app:layout_constraintBottom_toBottomOf="@id/monthlyPlanView"
+            app:layout_constraintStart_toStartOf="@id/monthlyPlanView"
+            app:layout_constraintTop_toTopOf="@id/monthlyPlanView" />
+
+        <TextView
+            android:id="@+id/monthlyTV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Monthly"
+            android:textColor="#F0F0F0"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/monthlyTV2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/monthlyPlanView" />
+
+        <TextView
+            android:id="@+id/monthlyTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="US$19.99/month"
+            android:textColor="#F0F0F0"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/monthlyPlanView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/monthlyTV1" />
+
+        <ImageView
+            android:id="@+id/annualPlanView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/inapp_unclicked"
+            android:clickable="true"
+            android:contentDescription="Yearly Plan"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="@id/innerGuideline2"
+            app:layout_constraintTop_toTopOf="@id/innerGuideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iconAnnual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_unselected"
+            app:layout_constraintBottom_toBottomOf="@id/annualPlanView"
+            app:layout_constraintStart_toStartOf="@id/annualPlanView"
+            app:layout_constraintTop_toTopOf="@id/annualPlanView" />
+
+        <TextView
+            android:id="@+id/annualTV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Annual"
+            android:textColor="#F0F0F0"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/annualTV2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/annualPlanView" />
+
+        <TextView
+            android:id="@+id/annualTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="US$39.99/year"
+            android:textColor="#F0F0F0"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/annualPlanView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/annualTV1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_18"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Try It Now"
+        android:textColor="#F0F0F0"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@id/outerGuideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/outerGuideline3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/outerGuideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/outerGuideline4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/inapp_privacy_policy"
+            android:textColor="#4A4A4A"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_line" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/inapp_restore_purchase"
+            android:textColor="#4A4A4A"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/inapp_terms_of_use"
+            android:textColor="#4A4A4A"
+            android:textSize="11sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

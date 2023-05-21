@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ChatGPTApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="onboarding_tv2">Ask the bot anything, It’s\n always ready to help!</string>
+    <string name="onboarding_tv1"><font color='#F0F0F0'>Lorem </font><font color='#4aa081'>Ipsum dolor sit</font></string>
+
+
+    <string name="inapp1"><font color='#F0F0F0'>Chat</font><font color='#4aa081'>GPT</font></string>
+    <string name="inapp2">Unlimited chat with gpt for only, \nTry It Now.</string>
+    <string name="inapp3"> Unlock to continue </string>
+    <string name="inapp_privacy_policy"><u>Privacy Policy</u></string>
+    <string name="inapp_restore_purchase"><u>Restore Purchase</u></string>
+    <string name="inapp_terms_of_use"><u>Terms of Use</u></string>
+</resources>
