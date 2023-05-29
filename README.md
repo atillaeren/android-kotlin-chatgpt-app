@@ -27,7 +27,7 @@ The ChatGPT App is an Android Kotlin application that utilizes the power of Open
 ## Dependencies
 
 - [Flow](https://kotlinlang.org/docs/flow.html) - Version 1.6.1
-- [Reveneucat] (https://www.revenuecat.com/docs) - Version 5.4.0
+- [Reveneucat](https://www.revenuecat.com/docs) - Version 5.4.0
 - [Room](https://developer.android.com/training/data-storage/room) - Version 2.5.1
 - [Retrofit](https://square.github.io/retrofit/) - Version 2.9.0
 - [Hilt](https://dagger.dev/hilt/) - Version 2.45
