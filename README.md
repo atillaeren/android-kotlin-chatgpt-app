@@ -2,6 +2,8 @@
 
 The ChatGPT App is an Android Kotlin application that utilizes the power of OpenAI's GPT-3.5 language model to provide interactive and natural language-based conversations. It allows users to engage in conversations with an AI chatbot capable of understanding and generating human-like responses.
 
+<br>
+
 ## Technologies Used
 
 - Kotlin
@@ -15,6 +17,8 @@ The ChatGPT App is an Android Kotlin application that utilizes the power of Open
 - OkHttp
 - Koin (Optional - Dependency Injection alternative)
 
+<br>
+
 ## Features
 
 - Natural Language Conversations: Engage in interactive and dynamic conversations with the AI chatbot powered by OpenAI's GPT-3.5 model.
@@ -23,6 +27,8 @@ The ChatGPT App is an Android Kotlin application that utilizes the power of Open
 - Contextual Understanding: The chatbot can maintain context across multiple turns, enabling more coherent and contextual responses.
 - Sentiment Analysis: The app incorporates sentiment analysis to detect and respond appropriately to the user's emotions and sentiments.
 - Multi-Language Support: The chatbot can converse in multiple languages, expanding its reach and making it accessible to users worldwide.
+
+<br>
 
 ## Dependencies
 
@@ -35,6 +41,8 @@ The ChatGPT App is an Android Kotlin application that utilizes the power of Open
 - [OkHttp](https://square.github.io/okhttp/) - Version 4.10.0
 - [Koin](https://insert-koin.io/) - Version 3.3.2 (Optional - Dependency Injection alternative)
 
+<br>
+
 ## Installation
 
 Provide instructions on how to install and run your project locally. Include any necessary setup steps or configurations.
@@ -46,6 +54,8 @@ Example:
 2. Open the project in Android Studio.
 
 3. Build and run the project on an emulator or connected device.
+
+<br>
 
 ## License
 
